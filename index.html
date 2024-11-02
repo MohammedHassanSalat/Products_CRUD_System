@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!--  -->
+    <section class="py-5">
+        <div class="container">
+            <h1 class="my-3"> Product</h1>
+            <label for="productName">Product Name</label>
+            <input type="text" name="" class="form-control" id="productName">
+
+            <label for="productPrice">Product Price</label>
+            <input type="text" class="form-control" id="productPrice">
+
+
+            <label for="productCateg">Product Category</label>
+            <input type="text" class="form-control" id="productCateg">
+
+            <label for="productDesc">Product Description</label>
+            <input type="text" class="form-control" id="productDesc">
+
+            <label for="productCount">Product Count</label>
+            <input type="number" class="form-control w-25" id="productCount">
+
+
+            <button class="btn btn-info mt-3" onclick="addProduct()">Add Product</button>
+            <button class="btn btn-danger mt-3" onclick="deleteAll()">Delete All</button>
+
+            <input type="text" name="" id="search" 
+            placeholder="search" onkeyup="searchProduct(this.value)" class="form-control w-50 mt-3">
+
+            <table class="table mt-5 text-center table-bordered">
+                <thead class="table-dark">
+                    <th>ID</th>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Product Category</th>
+                    <th>Product Description</th>
+                    <th>Count</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tBody">
+                    <!--   -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <!-- js file -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
